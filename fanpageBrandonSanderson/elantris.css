@@ -1,0 +1,56 @@
+body {
+    color: black;
+    background-color: #FFDEAD;
+}
+
+.raoden {               /*referente ao container*/
+    float: left;
+    margin-top: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.raoden-img {           /*referente a imagem*/
+    mix-blend-mode: multiply;
+    background-color: transparent;
+    width: 1000px;
+    height: auto;
+    opacity: 0.2;
+    position: absolute;     /*permite que a imagem seja coberta pelo texto*/
+    z-index: -1;            /*posiciona a imagem atrás do texto*/
+}
+
+.raoden h1 {
+    margin-top: 70px;
+    color: #D2691E;
+}
+
+.raoden p {
+    text-indent: 30px; /* Cria um recuo no início de cada parágrafo */
+    line-height: 1.5; /* Melhora a legibilidade do texto */
+    font-size: 1.5rem;
+    word-wrap: break-word; /* Quebra palavras longas caso não caibam dentro da largura */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /*centraliza o texto */
+    align-items: center;
+    font-family: cursive;
+    font-size: calc(2vw + 20px); /*calcula o tamanho da letra tomando como base o tamanho da navbar*/
+    text-align: center;
+    top: 0; /*garante que está no topo*/
+}
+
+.capa {
+    float: right;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.capa-img {
+    border-radius: 10%;
+    border: 5px solid #D2691E;
+}
