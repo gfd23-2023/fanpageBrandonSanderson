@@ -1,3 +1,48 @@
 body {
     background-color: #FFDEAD;
 }
+
+header h1 {
+    text-align: center;
+    font-size: 3.0rem;
+    margin: 0;
+    font-family: cursive;
+}
+
+ul {                /*modifica a estrutura da navbar*/
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1.0vw + 10px);
+}
+
+a {                 /*modifica o estilo da escrita dos hiperlinks*/
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #D2691E;
+}
+
+.quadrantes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*caso adicione mais imagens, mude o 3 para o total de imgs*/
+    gap: 10px;
+}
+
+.quadrante {
+    display: flex;
+    justify-content: center;
+}
+
+.quadrante img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 5px solid #D2691E;
+}
