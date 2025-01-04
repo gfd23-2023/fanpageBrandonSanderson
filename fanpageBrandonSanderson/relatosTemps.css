@@ -31,12 +31,15 @@ nav a:hover {
 .quadrantes {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /*caso adicione mais imagens, mude o 3 para o total de imgs*/
+    justify-items: center;
+    align-items: center;
     gap: 10px;
 }
 
 .quadrante {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .quadrante img {
