@@ -40,9 +40,13 @@ nav a:hover {
 }
 
 .quadrante img {
-    width: 70%;
+    width: 90%;         /*talvez precise mudar essa linha também, ao adicionar mais imagens*/
     height: auto;
     object-fit: cover;
     border-radius: 10%;
     border: 5px solid #D2691E;
+}
+
+figcaption {
+    text-align: center;
 }
