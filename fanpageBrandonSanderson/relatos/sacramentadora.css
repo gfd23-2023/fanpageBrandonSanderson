@@ -50,7 +50,7 @@ body {
     position: relative;     /*define a div como container de referência*/
     float: right;
     padding: 40px;
-    margin-top: 100px auto;
+    margin-top: 100px;
 }
 
 .capa-img {
@@ -65,4 +65,64 @@ figure {            /*foi isso aqui que fez a legenda parar de puxar a imagem pa
 
 figcaption {
     text-align: center;
+}
+
+.dalinar {
+    position: relative;
+    clear: both;    /*faz com que a div fique abaixo do último elemento flutuante*/
+    float: right;
+    padding: 20px;
+    max-width: 1000px;
+    margin-top: 40px;
+}
+
+.dalinar-img {
+    mix-blend-mode: multiply;
+    background-color: transparent;
+    width: 1000px;
+    height: auto;
+    opacity: 0.2;
+    position: absolute;
+    z-index: -1;
+}
+
+.dalinar h1 {
+    /*estilização*/
+    text-align: center;
+    color: #D2691E;
+    text-decoration: underline overline;
+    text-decoration-style: wavy;
+}
+
+.dalinar p {
+    /*estilização*/
+    text-indent: 30px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+
+    /*espacinho entre os parágrafos*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.DalinarKholin {    /*nesse caso não precisou do clear: both, não sei dizer o motivo*/
+    position: relative;
+    float: left;
+    padding: 40px;
+    margin-top: 100px;
+    max-width: 700px;
+    max-height: auto;
+}
+
+.foto {
+    width: 700px;
+    height: auto;
+    border-radius: 10%;
+    border: 5px solid #D2691E;
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
 }
