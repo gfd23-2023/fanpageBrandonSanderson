@@ -86,7 +86,7 @@ figcaption {
     z-index: -1;
 }
 
-.dalinar h1 {
+ h1 {
     /*estilização*/
     text-align: center;
     color: #D2691E;
@@ -94,7 +94,7 @@ figcaption {
     text-decoration-style: wavy;
 }
 
-.dalinar p {
+p {
     /*estilização*/
     text-indent: 30px;
     line-height: 1.5;
@@ -125,4 +125,72 @@ figcaption {
 
 .foto:hover {
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+.padrao {
+    position: relative;
+    clear: both;
+    float: left;
+    padding: 40px;
+    margin-top: 40px;
+    max-width: 1000px;
+    max-height: 1000px;
+    min-width: 900px;
+    min-height: 900px;
+}
+
+.padrao-img {
+    mix-blend-mode: multiply;
+    background-color: transparent;
+    width: 900px;
+    height: auto;
+    opacity: 0.2;
+    position: absolute;
+    z-index: -1;
+}
+
+.shallan {
+    position: relative;
+    float: right;
+    padding: 40px;
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.shallan-img {
+    border-radius: 10%;
+    border: 5px solid #D2691E;
+    transition: transform 0.3s ease-in-out;
+}
+
+.shallan-img:hover {
+    transform: scale(1.05);
+}
+
+.maisShallan {
+    position:relative;
+    clear: both;
+    float: left;
+    margin-top: 30px;
+    max-width: 900px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-600px); /* Move 20px para cima */
+    padding-left: 200px;
+    gap: 40px;
+}
+.shallanDavar {
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+    border: 5px solid #D2691E;
+}
+
+.veu {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #D2691E;
+    object-fit: cover;
 }
